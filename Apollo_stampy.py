@@ -88,14 +88,15 @@ files['S159']=['/scratch/vt20265/clouded_apollo/P21213_139_S159_L003_R1_001.fast
 files['S160']=['/scratch/vt20265/clouded_apollo/P21213_140_S160_L003_R1_001.fastq.gz','/scratch/vt20265/clouded_apollo/P21213_140_S160_L003_R2_001.fastq.gz']
 
 
-for i in samples_1_libraries:
-	fastq_1 = files[i][0]
-	fastq_2 = files[i][1]
-	Sample_ID=str(i)
-	out_dir='/scratch/vt20265/clouded_apollo/mapping/'
-	genome='/scratch/vt20265/clouded_apollo/Genome/GCA_907164705.1_Parnassius_apollo_genomic.fasta'
-	outFile='/home/vt20265/Scripts/'+Sample_ID+'_Appolo_BWA_GATK'+'.sh'
-	run_SRA_BWA_GATK_lib_1(Sample_ID, genome, out_dir, fastq_1, fastq_2, outFile)
+if __name__ == "__main__":
+	for i in samples_1_libraries:
+		fastq_1 = files[i][0]
+		fastq_2 = files[i][1]
+		Sample_ID=str(i)
+		out_dir='/scratch/vt20265/clouded_apollo/mapping/'
+		genome='/scratch/vt20265/clouded_apollo/Genome/GCA_907164705.1_Parnassius_apollo_genomic.fasta'
+		outFile='/home/vt20265/Scripts/'+Sample_ID+'_Appolo_BWA_GATK'+'.sh'
+		run_SRA_BWA_GATK_lib_1(Sample_ID, genome, out_dir, fastq_1, fastq_2, outFile)
 
 
 
