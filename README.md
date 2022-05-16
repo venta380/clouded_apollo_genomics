@@ -6,16 +6,19 @@ Apollo_stampy.py is a python script that writes sbatch scripts. These scripts we
 
 ## SNP calling
 SNP calling was performed on all bam files using BCFtools. 
-
+```
 bcftoolsCommand=mpileup --threads 10 --skip-indels -Ou -f /scratch/vt20265/clouded_apollo/Genome/GCA_907164705.1_Parnassius_apollo_genomic.fasta /scratch/vt20265/clouded_apollo/mapping/S121.bam /scratch/vt20265/clouded_apollo/mapping/S122.bam /scratch/vt20265/clouded_apollo/mapping/S123.bam /scratch/vt20265/clouded_apollo/mapping/S124.bam /scratch/vt20265/clouded_apollo/mapping/S125.bam /scratch/vt20265/clouded_apollo/mapping/S126.bam /scratch/vt20265/clouded_apollo/mapping/S127.bam /scratch/vt20265/clouded_apollo/mapping/S128.bam /scratch/vt20265/clouded_apollo/mapping/S129.bam /scratch/vt20265/clouded_apollo/mapping/S130.bam /scratch/vt20265/clouded_apollo/mapping/S131.bam /scratch/vt20265/clouded_apollo/mapping/S132.bam /scratch/vt20265/clouded_apollo/mapping/S133.bam /scratch/vt20265/clouded_apollo/mapping/S134.bam /scratch/vt20265/clouded_apollo/mapping/S135.bam /scratch/vt20265/clouded_apollo/mapping/S136.bam /scratch/vt20265/clouded_apollo/mapping/S137.bam /scratch/vt20265/clouded_apollo/mapping/S138.bam /scratch/vt20265/clouded_apollo/mapping/S139.bam /scratch/vt20265/clouded_apollo/mapping/S140.bam /scratch/vt20265/clouded_apollo/mapping/S141.bam /scratch/vt20265/clouded_apollo/mapping/S142.bam /scratch/vt20265/clouded_apollo/mapping/S143.bam /scratch/vt20265/clouded_apollo/mapping/S144.bam /scratch/vt20265/clouded_apollo/mapping/S145.bam /scratch/vt20265/clouded_apollo/mapping/S146.bam /scratch/vt20265/clouded_apollo/mapping/S147.bam /scratch/vt20265/clouded_apollo/mapping/S148.bam /scratch/vt20265/clouded_apollo/mapping/S149.bam /scratch/vt20265/clouded_apollo/mapping/S151.bam /scratch/vt20265/clouded_apollo/mapping/S152.bam /scratch/vt20265/clouded_apollo/mapping/S153.bam /scratch/vt20265/clouded_apollo/mapping/S154.bam /scratch/vt20265/clouded_apollo/mapping/S155.bam /scratch/vt20265/clouded_apollo/mapping/S156.bam /scratch/vt20265/clouded_apollo/mapping/S157.bam /scratch/vt20265/clouded_apollo/mapping/S158.bam /scratch/vt20265/clouded_apollo/mapping/S159.bam
-
+```
 
 ## PCA
-
+The code used to generate the PCA was provided in Clouded_apolo_PCA.R 
 
 ## LEA/Admixture
+The code used to perform admiture using LEA was provided in LEA_clouded_apollo.R
 
 ## IBD (Identity by descent) analysis and Plots
+IBD analysis and dendrogram was also provided in Clouded_apolo_PCA.R 
+
 
 ## FST
 
