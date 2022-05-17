@@ -21,5 +21,5 @@ IBD analysis and dendrogram was also provided in Clouded_apolo_PCA.R
 
 
 ## FST
-
+Clouded_Apollo_FST_dxy.py extimates the Fst, Dxy, fixed, private and shared polymorphisms. 
 
